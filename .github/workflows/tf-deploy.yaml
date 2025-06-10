@@ -30,7 +30,7 @@ jobs:
 
     - name: Terraform Plan
       working-directory: terraform/dev
-      run: terraform plan -refresh-only
+      run: terraform plan
 
     # - name: Terraform Apply
     #   working-directory: terraform/dev
