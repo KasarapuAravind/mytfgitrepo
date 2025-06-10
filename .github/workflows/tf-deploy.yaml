@@ -30,8 +30,8 @@ jobs:
 
     - name: Terraform Plan
       working-directory: terraform/dev
-      run: terraform plan
+      run: terraform plan -refresh-only
 
-    - name: Terraform Apply
-      working-directory: terraform/dev
-      run: terraform apply -auto-approve
+    # - name: Terraform Apply
+    #   working-directory: terraform/dev
+    #   run: terraform apply -auto-approve
