@@ -12,7 +12,7 @@ terraform {
   backend "s3" {
     bucket         = "dev-aravind-terraform-state-bucket"
     key            = "mytfgitrepo/dev/terraform.tfstate"
-    region         = "us-west-2"
+    region         = "us-east-1"
     encrypt        = true
     use_lockfile = true
   }
