@@ -8,3 +8,9 @@ resource "aws_instance" "example" {
     Owner       = "aravind"
   }
 }
+
+import {
+  to = aws_instance.example
+  id = "i-05760dffda7792ba2"
+}
+
