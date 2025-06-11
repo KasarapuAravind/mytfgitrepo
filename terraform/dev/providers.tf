@@ -9,11 +9,11 @@ terraform {
       version = "5.99.0"
     }
   }
-  backend "s3" {
-    bucket         = "dev-aravind-terraform-state-bucket"
-    key            = "mytfgitrepo/dev/terraform.tfstate"
-    region         = "us-east-1"
-    encrypt        = true
-    use_lockfile = true
-  }
+  # backend "s3" {
+  #   bucket         = "dev-aravind-terraform-state-bucket"
+  #   key            = "mytfgitrepo/dev/terraform.tfstate"
+  #   region         = "us-east-1"
+  #   encrypt        = true
+  #   use_lockfile = true
+  # }
 }
