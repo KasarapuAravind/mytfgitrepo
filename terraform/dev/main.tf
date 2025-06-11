@@ -5,7 +5,6 @@ resource "aws_instance" "example" {
   tags = {
     Name        = "Terraform-EC2"
     Environment = "dev"
-    Owner       = "aravind"
   }
 }
 
