@@ -1,10 +1,11 @@
 resource "aws_instance" "example" {
   ami           = "ami-0731becbf832f281e" # Example for ubuntu in us-east-1
+  count = 2
   instance_type = var.instance_type
   vpc_security_group_ids = [aws_security_group.mysg.id]
 
   tags = {
-    Name        = "Terraform-EC2"
+    Name        = "Terraform-EC2-${count.index}"
     Environment = "dev"
   }
 }
