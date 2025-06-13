@@ -25,6 +25,3 @@ resource "aws_vpc_security_group_egress_rule" "mysgrule1" {
   }
 }
 
-
-#testmain1
-
